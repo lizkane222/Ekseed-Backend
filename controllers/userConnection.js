@@ -2,6 +2,7 @@ const db = require("../models");
 
 
 const index = (req, res) => {
+    console.log("index")
     db.UserConnection.find({}, (err, foundUserConnections) => {
         if (err) {
             console.log("Error in user connection index:", err);

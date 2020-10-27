@@ -30,8 +30,9 @@ const register = async (req,res) => {
 
 // LOGIN ROUTE (POST)
 const login = async (req,res) => {
+    console.log('login')
     try {
-        const foundUser = await (await db.User.findOne({ email: req.body.email })).isSelected(
+        const foundUser = await db.User.findOne({ email: req.body.email }).select(
             "+password"
         );
         // console.log(foundUser);
@@ -39,9 +40,9 @@ const login = async (req,res) => {
         if(!foundUser) {
             return res
             .status(400)
-            .json({ staus: 400, message: "Email or Password incorrect"});
+            .json({ status: 400, message: "Email or Password incorrect"});
         }
-
+        console.log(req.body, foundUser)
         const isMatch = await bcrypt.compare(req.body.password, foundUser.password);
 
         // check if the passwords match
@@ -66,37 +67,6 @@ const login = async (req,res) => {
                 message: "Username or Password is Incorrect"
             });
         }
-
-        // const isMatch = await bcrypt.compare(req.body.password, foundUser.password);
-
-        // if (isMatch) {
-        //     // create a json web token
-        //     const signedJwt = await jwt.sign(
-        //         {
-        //             // take id of the found user and add in teh id ot the jwt payload
-        //             _id: foundUser._id,
-        //         },
-        //             // secret to sign the jwt with 
-        //             "super_secret_key",
-        //         {
-        //             // it's good practice to have an expiration amount of jwt tokens.
-        //             expiresIn: '8h',
-        //         }
-        //     );
-
-        //     return res.status(200).json({
-        //         status: 200,
-        //         message: "Success",
-        //         id: foundUser._id,
-        //         signedJwt,
-        //     });
-        //     // the password provided does not match the password on file
-        // } else {
-        //     return res.status(400).json({
-        //         status: 400,
-        //         message: "Username or password is incorrect",
-        //     });
-        // }
     } catch (error) {
         console.log(error);
         return res.status(500).json({
