@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectionString = 
     // process.env.MONGODB_URI
-    "mongodb://localhost:27017/leveragedb";
+    "mongodb://localhost:27017/ekseed";
 const configOptions = {
     useNewUrlParser: true,
     useCreateIndex: true,

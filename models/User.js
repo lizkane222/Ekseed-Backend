@@ -22,6 +22,11 @@ const userSchema = new Schema(
             type: Date,
             default: Date.now,
         },
+        connections: [{
+            type: String,
+            required: false,
+            unique: false,
+        }],
     }
 );
 

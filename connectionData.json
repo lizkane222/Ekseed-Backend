@@ -1,12 +1,13 @@
 {
     "UserConnections" : [
         {
-            "nickname": "Liz",
+            "preferredName": "Liz",
             "firstName": "Helen Elizabeth",
             "lastName": "Kane",
             "network": "self",
             "company": "[]",
             "dateReview": "",
+            "profilePhoto": "",
             "note": [{
                 "tag": ["important"],
                 "content": "only discusses politics in small group setting",
@@ -33,12 +34,13 @@
             }] 
         },
         {
-            "nickname": "Zack",
+            "preferredName": "Zack",
             "firstName": "Zachary",
             "lastName": "Kane",
             "network": "family",
             "company": ["Google"],
             "dateReview": "",
+            "profilePhoto": "",
             "note": [{
                 "tag": ["heart"],
                 "content": "speaks French, enjoys real cheese, idolizes coffee",
@@ -57,12 +59,13 @@
             }] 
         },
         {
-            "nickname": "Molls",
+            "preferredName": "Molls",
             "firstName": "Molly",
             "lastName": "Shoulders",
             "network": "family",
             "company": ["Phoenix Unified School District"],
             "dateReview": "",
+            "profilePhoto": "",
             "note": [{
                 "tag": ["like"],
                 "content": "basketball, discussing politics",
