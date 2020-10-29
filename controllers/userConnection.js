@@ -2,7 +2,7 @@ const db = require("../models");
 
 
 const index = (req, res) => {
-    console.log("index")
+    console.log("backend userConnection controller @ index")
     db.UserConnection.find({}, (err, foundUserConnections) => {
         if (err) {
             console.log("Error in user connection index:", err);
@@ -10,7 +10,7 @@ const index = (req, res) => {
         }
 
         if(!foundUserConnections.length) {
-            return res.status(200).json({message: "No Games Found in database."});
+            return res.status(200).json({message: "No UserConnections Found in database."});
         }
 
         res.status(200).json({UserConnection: foundUserConnections});

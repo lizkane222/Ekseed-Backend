@@ -31,7 +31,8 @@
                 "workPhone": "",
                 "workEmail": "",
                 "workAddress": ""
-            }] 
+            }],
+            "user": "5f99d4259bca6be7d919b39c"
         },
         {
             "preferredName": "Zack",
@@ -56,7 +57,8 @@
                 "workPhone": "+1(999)213-5243",
                 "workEmail": "zackkane@google.com",
                 "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156"
-            }] 
+            }],
+            "user": "5f99d4259bca6be7d919b39c"
         },
         {
             "preferredName": "Molls",
@@ -89,7 +91,8 @@
                 "workPhone": "+1(602)889-4412",
                 "workEmail": "molly.p.shoulders@phxschools.com",
                 "workAddress": ""
-            }] 
+            }],
+            "user": "5f99d4259bca6be7d919b39c"
         }
     ]
 }

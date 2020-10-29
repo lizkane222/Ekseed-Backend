@@ -11,7 +11,8 @@ const authRequired = require("../middleware/authRequired");
 
 
 /* Routes */
-router.get('/', authRequired, ctrl.userConnection.index);
+router.get('/', ctrl.userConnection.index);
+// router.get('/', authRequired, ctrl.userConnection.index);
 router.get('/:id', ctrl.userConnection.show);
 router.post('/', ctrl.userConnection.create);
 router.put('/:id', ctrl.userConnection.update);

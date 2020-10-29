@@ -23,9 +23,8 @@ const userSchema = new Schema(
             default: Date.now,
         },
         connections: [{
-            type: String,
-            required: false,
-            unique: false,
+            type: Schema.Types.ObjectId,
+            ref: "UserConnection"
         }],
     }
 );
