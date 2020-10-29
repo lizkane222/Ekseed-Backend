@@ -41,7 +41,7 @@ const update = (req, res) => {
         req.params.id,
         req.body,
         { new: true },
-        (err, updateUser) => {
+        (err, updatedUser) => {
             if (err) console.log("Error in User @ update:", err);
 
             if (!updatedUser) {

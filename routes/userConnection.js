@@ -4,19 +4,16 @@ const ctrl = require('../controllers');
 
 const authRequired = require("../middleware/authRequired");
 
-/* Internal Modules */
-/* Instanced Modules */
-/* Configuration */
-/* Middleware */
 
+// base route : /connection
 
 /* Routes */
-router.get('/', ctrl.userConnection.index);
-// router.get('/', authRequired, ctrl.userConnection.index);
-router.get('/:id', ctrl.userConnection.show);
-router.post('/', ctrl.userConnection.create);
-router.put('/:id', ctrl.userConnection.update);
-router.delete('/:id', ctrl.userConnection.destroy)
+// router.get('/', ctrl.connection.index);
+router.get('/', authRequired, ctrl.connection.index);
+router.get('/:id', ctrl.connection.show);
+router.post('/', ctrl.connection.create);
+router.put('/:id', ctrl.connection.update);
+router.delete('/:id', ctrl.connection.destroy)
 
 /* Server Listener */
 module.exports = router;

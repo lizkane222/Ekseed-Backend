@@ -4,6 +4,8 @@ const ctrl = require("../controllers");
 
 const authRequired = require("../middleware/authRequired");
 
+// base route : /auth
+
 // routes
 router.post("/register", ctrl.auth.register);
 router.post("/login", ctrl.auth.login);

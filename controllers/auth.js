@@ -19,7 +19,7 @@ const register = async (req,res) => {
 
         return res
             .status(201)
-            .json({ status: 201, message: "success", createdUser});
+            .json({ status: 201, message: "Successful User Register", createdUser});
     } catch(err) {
         return res.status(500).json({
             status: 500,
@@ -30,7 +30,7 @@ const register = async (req,res) => {
 
 // LOGIN ROUTE (POST)
 const login = async (req,res) => {
-    console.log('login')
+    console.log('auth controller login route')
     try {
         const foundUser = await db.User.findOne({ email: req.body.email }).select(
             "+password"
@@ -43,7 +43,16 @@ const login = async (req,res) => {
             .json({ status: 400, message: "Email or Password incorrect"});
         }
         console.log(req.body, foundUser)
+
+        // const salt = await bcrypt.genSalt(10);
+              // // takes each character and turns it into multiple random characters
+        // const hash = await bcrypt.hash(req.body.password, salt);
+                // create user with req.body and hashed password
+            // const password = hash
+
+        
         const isMatch = await bcrypt.compare(req.body.password, foundUser.password);
+        // const isMatch = await bcrypt.compare(req.body.password, foundUser.password);
 
         // check if the passwords match
         if (isMatch) {
@@ -56,7 +65,7 @@ const login = async (req,res) => {
             )
             res.status(200).json({
                 status: 200,
-                message: "Success",
+                message: "Successful Login",
                 token: signedJwt,
             })
 
