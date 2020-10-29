@@ -40,6 +40,18 @@ const show = (req, res) => {
     });
   };
   
+// router.get('/:id/edit', authRequired, ctrl.connection.edit);
+// const edit = (req,res) => {
+//   db.UserConnection.findById(req.params.id, (err, foundUserConnection) => {
+//     if (err) {
+//       console.log(err);
+//       return res.send(err);
+//     }
+
+//     const context = { connection :  }
+//   })
+// }
+
   const update = (req, res) => {
     db.UserConnection.findByIdAndUpdate(
       req.params.id,

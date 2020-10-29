@@ -1,25 +1,26 @@
 const db = require("../models");
 
-const index = (req, rest) => {
-    console.log("backend User controller @ index")
-    db.User.find({}, (err, foundUser) => {
-        if (err) {
-            console.log("Error in user index:", err);
-            return rest.status(500).json({message: "Error. Please try again."})
-        }
+// const index = (req, rest) => {
+//     console.log("backend User controller @ index")
+//     db.User.find({}, (err, foundUser) => {
+//         if (err) {
+//             console.log("Error in user index:", err);
+//             return rest.status(500).json({message: "Error. Please try again."})
+//         }
 
-        if(!foundUser) {
-            return res.status(200).json({message: "No User Found in database."});
-        }
+//         if(!foundUser) {
+//             return res.status(200).json({message: "No User Found in database."});
+//         }
 
-        res.status(200).json({User : foundUser});
-    });
-};
+//         res.status(200).json({User : foundUser});
+//     });
+// };
 
 const show = (req, res) => {
-    db.User.findById(req.params.id, (err, foundUser) => {
+    console.log(req.userId)
+    db.User.findById(req.userId, (err, foundUser) => {
         if (err) console.log("Error in User show:", err);
-
+        console.log(foundUser)
         if (!foundUser) {
             return res
             .status(200)
@@ -70,7 +71,7 @@ const destroy = (req, res) => {
 };
 
 module.exports = {
-    index,
+    // index,
     show,
     create,
     update,
