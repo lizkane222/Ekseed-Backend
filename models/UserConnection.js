@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { User } = require('.');
+// const { User } = require('.');
 const Schema = mongoose.Schema;
 
 const UserConnectionSchema = new Schema({
@@ -19,17 +19,18 @@ const UserConnectionSchema = new Schema({
         privacy: {type: String, required: true},
         timestamp: {type: Date, default: Date.now}
     },],
-    contact: [{
-        cellPhoneOne: {type: String, required: false},
-        cellPhoneTwo: {type: String, required: false},
-        email: {type: String, required: false},
-        workName: {type: String, required: false},
-        workPhone: {type: String, required: false},
-        workEmail: {type: String, required: false},
-        workAddress: {type: String, required: false},
-    }] ,
+    
+    cellPhoneOne: {type: String, required: false},
+    cellPhoneTwo: {type: String, required: false},
+    email: {type: String, required: false},
+    workName: {type: String, required: false},
+    workPhone: {type: String, required: false},
+    workEmail: {type: String, required: false},
+    workAddress: {type: String, required: false},
+    moreContact: [{type: String, required: false}],
+
     user: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "User",
     }
 },

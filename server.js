@@ -1,9 +1,9 @@
 /* External Modules*/
 const express = require('express');
-const routes = require('./routes');
 const cors = require("cors");
 
 /* Internal Modules */
+const routes = require('./routes');
 
 
 /* Instanced Modules */

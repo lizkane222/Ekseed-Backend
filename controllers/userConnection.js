@@ -13,14 +13,14 @@ const index = (req, res) => {
             return res.status(200).json({message: "No UserConnections Found in database."});
         }
 
-        res.status(200).json({UserConnection: foundUserConnections});
+        res.status(200).json({"connections": foundUserConnections});
     });
 };
 
 
 const show = (req, res) => {
     db.UserConnection.findById(req.params.id, (err, foundUserConnection) => {
-      if (err) console.log("Error in UserConnections#show:", err);
+      if (err) console.log("Error in UserConnection #show:", err);
   
       if (!foundUserConnection) {
         return res
@@ -28,29 +28,18 @@ const show = (req, res) => {
           .json({ message: "UserConnection with provided ID is not found." });
       }
   
-      res.status(200).json({ UserConnection: foundUserConnection });
+      res.status(200).json({ "connection": foundUserConnection });
     });
   };
   
   const create = (req, res) => {
     db.UserConnection.create(req.body, (err, savedUserConnection) => {
-      if (err) console.log("Error in UserConnections#create:", err);
+      if (err) console.log("Error in UserConnection #create:", err);
   
-      res.status(201).json({ UserConnection: savedUserConnection });
+      res.status(201).json({ "connection": savedUserConnection });
     });
   };
   
-// router.get('/:id/edit', authRequired, ctrl.connection.edit);
-// const edit = (req,res) => {
-//   db.UserConnection.findById(req.params.id, (err, foundUserConnection) => {
-//     if (err) {
-//       console.log(err);
-//       return res.send(err);
-//     }
-
-//     const context = { connection :  }
-//   })
-// }
 
   const update = (req, res) => {
     db.UserConnection.findByIdAndUpdate(
@@ -65,10 +54,9 @@ const show = (req, res) => {
             message: "UserConnection with provided ID could not be found for update.",
           });
         }
-  
-        res.status(200).json({ UserConnection: updatedUserConnection });
-      }
-    );
+        
+        res.status(200).json({ "connection": updatedUserConnection });
+    });
   };
   
   const destroy = (req, res) => {
@@ -81,7 +69,7 @@ const show = (req, res) => {
         });
       }
   
-      res.status(200).json({ UserConnection: deletedUserConnection });
+      res.status(200).json({ "connection": deletedUserConnection });
     });
   };
   

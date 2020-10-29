@@ -23,7 +23,7 @@ const userSchema = new Schema(
             default: Date.now,
         },
         connections: [{
-            type: Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "UserConnection"
         }],
     }

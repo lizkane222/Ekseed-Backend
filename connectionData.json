@@ -23,15 +23,15 @@
                 "privacy": "false"
             }
             ],
-            "contact": [{
-                "cellPhoneOne": "+1(555)876-1234",
-                "cellPhoneTwo": "",
-                "email": "elizabeth.shoulders@hotmail.com",
-                "workName": "",
-                "workPhone": "",
-                "workEmail": "",
-                "workAddress": ""
-            }],
+            "cellPhoneOne": "+1(555)876-1234",
+            "cellPhoneTwo": "",
+            "email": "elizabeth.shoulders@hotmail.com",
+            "workName": "",
+            "workPhone": "",
+            "workEmail": "",
+            "workAddress": "",
+            "moreContact": [""],
+
             "user": "5f99d4259bca6be7d919b39c"
         },
         {
@@ -49,15 +49,15 @@
                 "bookmark": "true",
                 "privacy": "false"
             }],
-            "contact": [{
-                "cellPhoneOne": "+1(555)222-1234",
-                "cellPhoneTwo": "(555)111-0987",
-                "email": "zack.kane@hotmail.com",
-                "workName": "Google",
-                "workPhone": "+1(999)213-5243",
-                "workEmail": "zackkane@google.com",
-                "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156"
-            }],
+            "cellPhoneOne": "+1(555)222-1234",
+            "cellPhoneTwo": "(555)111-0987",
+            "email": "zack.kane@hotmail.com",
+            "workName": "Google",
+            "workPhone": "+1(999)213-5243",
+            "workEmail": "zackkane@google.com",
+            "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156",
+            "moreContact": [""],
+
             "user": "5f99d4259bca6be7d919b39c"
         },
         {
@@ -83,15 +83,16 @@
                 "privacy": "true"
             }
             ],
-            "contact": [{
-                "cellPhoneOne": "+1(555)333-1234",
-                "cellPhoneTwo": "",
-                "email": "molly.shoulders@hotmail.com",
-                "workName": "",
-                "workPhone": "+1(602)889-4412",
-                "workEmail": "molly.p.shoulders@phxschools.com",
-                "workAddress": ""
-            }],
+            "cellPhoneOne": "+1(555)333-1234",
+            "cellPhoneTwo": "",
+            "email": "molly.shoulders@hotmail.com",
+            "workName": "",
+            "workPhone": "+1(602)889-4412",
+            "workEmail": "molly.p.shoulders@phxschools.com",
+            "workAddress": "",
+            "moreContact": [""],
+
+
             "user": "5f99d4259bca6be7d919b39c"
         }
     ]
