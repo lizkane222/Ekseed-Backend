@@ -5,7 +5,7 @@ const ctrl = require('../controllers');
 const authRequired = require("../middleware/authRequired");
 
 
-// base route : /connection
+// base route : /user/connection
 
 /* Routes */
 // router.get('/', ctrl.connection.index);

@@ -32,11 +32,18 @@ const show = (req, res) => {
     });
   };
   
+
   const create = (req, res) => {
+    const userId = req.userId
+    console.log(userId)
     db.UserConnection.create(req.body, (err, savedUserConnection) => {
       if (err) console.log("Error in UserConnection #create:", err);
-  
-      res.status(201).json({ "connection": savedUserConnection });
+      db.User.findById(userId, (err, foundUser) => {
+        if (err) console.log("Error in UserConnection @ create for find USER :", err);
+        foundUser.connections.push(savedUserConnection);
+        foundUser.save()
+        res.status(201).json({ "connection": savedUserConnection });
+      })
     });
   };
   

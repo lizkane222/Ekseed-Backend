@@ -18,16 +18,17 @@ const db = require("../models");
 
 const show = (req, res) => {
     console.log(req.userId)
-    db.User.findById(req.userId, (err, foundUser) => {
-        if (err) console.log("Error in User show:", err);
-        console.log(foundUser)
-        if (!foundUser) {
-            return res
-            .status(200)
-            .json({message: "User with provided ID is not found."});
-        }
-
-        res.status(200).json({ User: foundUser });
+    db.User.findById(req.userId).populate("connections").exec(
+        (err, foundUser) => {
+           if (err) console.log("Error in User show:", err);
+           console.log(foundUser)
+           if (!foundUser) {
+               return res
+               .status(200)
+               .json({message: "User with provided ID is not found."});
+           }
+   
+           res.status(200).json({ User: foundUser });
     });
 };
 
