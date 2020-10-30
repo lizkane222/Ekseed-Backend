@@ -13,14 +13,17 @@
                 "content": "only discusses politics in small group setting",
                 "reviewed": "false",
                 "bookmark": "true",
-                "privacy": "true"
+                "privacy": "true",
+                "timestamp": ""
             },
             {
                 "tag": ["like"],
                 "content": "frisbee, all sports, gardening, reading, afternoon drinks",
                 "reviewed": "false",
                 "bookmark": "true",
-                "privacy": "false"
+                "privacy": "false",
+                "timestamp": ""
+                
             }
             ],
             "cellPhoneOne": "+1(555)876-1234",
@@ -32,7 +35,7 @@
             "workAddress": "",
             "moreContact": [""],
 
-            "user": "5f99d4259bca6be7d919b39c"
+            "user": ""
         },
         {
             "preferredName": "Zack",
@@ -47,7 +50,9 @@
                 "content": "speaks French, enjoys real cheese, idolizes coffee",
                 "reviewed": "false",
                 "bookmark": "true",
-                "privacy": "false"
+                "privacy": "false",
+                "timestamp": ""
+
             }],
             "cellPhoneOne": "+1(555)222-1234",
             "cellPhoneTwo": "(555)111-0987",
@@ -58,7 +63,7 @@
             "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156",
             "moreContact": [""],
 
-            "user": "5f99d4259bca6be7d919b39c"
+            "user": ""
         },
         {
             "preferredName": "Molls",
@@ -73,14 +78,18 @@
                 "content": "basketball, discussing politics",
                 "reviewed": "false",
                 "bookmark": "false",
-                "privacy": "true"
+                "privacy": "true",
+                "timestamp": ""
+
             },
             {
                 "tag": ["don't"],
                 "content": "discuss politics",
                 "reviewed": "false",
                 "bookmark": "true",
-                "privacy": "true"
+                "privacy": "true",
+                "timestamp": ""
+
             }
             ],
             "cellPhoneOne": "+1(555)333-1234",
@@ -92,8 +101,7 @@
             "workAddress": "",
             "moreContact": [""],
 
-
-            "user": "5f99d4259bca6be7d919b39c"
+            "user": ""
         }
     ]
 }
