@@ -1,11 +1,11 @@
 const db = require('./models');
 const data = require('./connectionData.json');
 
-db.UserConnection.deleteMany({}, (err, deletedUserConnections) => {
-    db.UserConnection.create(data.UserConnections, (err, seededUserConnections) => {
+db.Connection.deleteMany({}, (err, deletedConnections) => {
+    db.Connection.create(data.Connections, (err, seededConnections) => {
         if (err) console.log(err);
         
-        console.log(data.UserConnections.length, 'User Connections created successfully');
+        console.log(data.Connections.length, 'User Connections created successfully');
         
         process.exit();
     });

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lizkane222/Leverage-Backend#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "bcryptjs": "^2.4.3",
     "connect-mongo": "^3.2.0",
     "cors": "^2.8.5",

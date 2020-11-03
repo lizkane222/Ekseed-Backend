@@ -1,0 +1,328 @@
+const liz = {
+{
+    "tag": ["important"],
+    "content": "only discusses politics in small group setting",
+    "reviewed": "false",
+    "bookmark": "true",
+    "privacy": "true",
+    "timestamp": ""
+},  
+
+{
+        {
+  "tag": ["important"],
+"content": "only discusses politics in small group setting",
+"reviewed": "false",
+"bookmark": "true",
+"privacy": "true",
+"timestamp": ""
+    }
+
+}
+
+
+{
+    "tag": ["like"],
+    "content": "frisbee, all sports, gardening, reading, afternoon drinks",
+    "reviewed": "false",
+    "bookmark": "true",
+    "privacy": "false",
+    "timestamp": ""
+    
+}
+}s
+
+const zack = {
+        "tag": ["heart"],
+        "content": "speaks French, enjoys real cheese, idolizes coffee",
+        "reviewed": "false",
+        "bookmark": "true",
+        "privacy": "false",
+        "timestamp": ""
+},
+
+const molly = {
+{
+        "tag": ["like"],
+        "content": "basketball, discussing politics",
+        "reviewed": "false",
+        "bookmark": "false",
+        "privacy": "true",
+        "timestamp": ""
+    },
+    {
+        "tag": ["don't"],
+        "content": "discuss politics",
+        "reviewed": "false",
+        "bookmark": "true",
+        "privacy": "true",
+        "timestamp": ""
+    }
+}
+
+
+
+
+{
+      "company": "unemployed",
+      "birthday": "02/22/1991"
+      "moreContact": "IS FROM: Phx AZ, Abq NM, Lille France, SF CA",
+      "preferredName": "Liz",
+      "firstName": "Helen Elizabeth",
+      "lastName": "Kane",
+      "network": "self",
+      "dateReview": "",
+      "profilePhoto": "https://i.imgur.com/VGDVWIh.jpg",
+      "cellPhoneOne": "+1(555)876-1234",
+      "cellPhoneTwo": "",
+      "email": "elizabeth.shoulders@hotmail.com",
+      "homeAddress": "kaneCo",
+      "workPhone": "5554443333",
+      "workEmail": "liz_kane@famous.com",
+      "workAddress": "SF CA",
+      "user": "5f9c2f2452fe3c08e679de35",
+      "notes": "",
+  }
+
+
+
+-------------------------------
+"username": "liz",
+"email": "lizkane222@gmail.com",
+"password": "liz"
+"username": "cat",
+"email": "cat@gmail.com",
+"password": "cat"
+
+
+
+  {
+      "birthday": "02/22/1991",
+      "preferredName": "Liz",
+      "firstName": "Helen Elizabeth",
+      "lastName": "Kane",
+      "network": "self",
+      "company": "kaneCo",
+      "dateReview": "",
+      "profilePhoto": "https://i.imgur.com/VGDVWIh.jpg",
+      "cellPhoneOne": "+1(555)876-1234",
+      "cellPhoneTwo": "+18884449393",
+      "email": "elizabeth.shoulders@hotmail.com",
+      "homeAddress": "480 Canal St, SF CA 94158",
+      "workPhone": "5554443333",
+      "workEmail": "liz_kane@famous.com",
+      "workAddress": "SF CA",
+      "user": "5f9c2f2452fe3c08e679de35",
+      "notes": [],
+  }
+
+
+
+
+
+  {
+    "preferredName": "Molls",
+    "birthday": "05/22/1992",
+    "firstName": "Molly",
+    "lastName": "Shoulders",
+    "network": "family",
+    "company": "Phoenix Unified School District",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/16y7124.jpg",
+    "cellPhoneOne": "+15553331234",
+    "cellPhoneTwo": "+17779994545",
+    "email": "molly.shoulders@hotmail.com",
+    "homeAddress": "Phx AZ",
+    "workPhone": "+1(602)889-4412",
+    "workEmail": "molly.p.shoulders@phxschools.com",
+    "workAddress": "Phoenix AZ",
+    "user": "",
+    "notes": [],
+  },
+
+  {
+    "company":"Google",
+    "birthday": "05/04/1993",
+    "preferredName": "Zack",
+    "firstName": "Zachary",
+    "lastName": "Kane",
+    "network": "family",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/n6HiCoE.jpg",
+    "cellPhoneOne": "+1(555)222-1234",
+    "cellPhoneTwo": "(555)111-0987",
+    "email": "zack.kane@hotmail.com",
+    "homeAddress": "SF CA",
+    "workPhone": "+1(999)213-5243",
+    "workEmail": "zackkane@google.com",
+    "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156",
+    "user": "",
+    "notes": [],
+  },
+
+  {
+    "company": "Quellen International",
+    "birthday": "07/27/1986",
+    "preferredName": "Lara",
+    "firstName": "Lara, Nicole, Lala",
+    "lastName": "Milford",
+    "network": "family",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/ESp7PWu.jpg",
+    "cellPhoneOne": "4447773535",
+    "cellPhoneTwo": "2223334342",
+    "email": "milford_lara",
+    "homeAddress": "quellen international",
+    "workPhone": "9998885352",
+    "workEmail": "milford_lara",
+    "workAddress": "888 3rd St, Phx, AZ",
+    "user": "",
+    "notes": [],
+  },
+
+  {
+    "company": "Hale Snow Removal",
+    "birthday": "08/10/1987",
+    "preferredName": "Emily",
+    "firstName": "Emily, Alison, MLE",
+    "lastName": "Hale, Shoulders",
+    "network": "family",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/nJPWZPI.jpg",
+    "cellPhoneOne": "4805550802",
+    "cellPhoneTwo": "4806885555",
+    "email": "emilyHale@gmail.com",
+    "homeAddress": "Anchorage AK",
+    "workPhone": "4805559999",
+    "workEmail": "haleco@gmail.com",
+    "workAddress": "Anchorage, Alaska",
+    "user": "",
+    "notes": []
+  },
+
+  {
+    "company": "n/a",
+    "birthday": "03/05/1988",
+    "preferredName": "Bea",
+    "firstName": "Beatrix",
+    "lastName": "Woo",
+    "network": "Generale Assembly",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/9XTjblL.jpg",
+    "cellPhoneOne": "+1 555 333 8888",
+    "cellPhoneTwo": "+1 555 222 7777",
+    "email": "beatrix_woo@gmail.com",
+    "homeAddress": "San Diego",
+    "workPhone": "+1 555 444 6666",
+    "workEmail": "woo.beatrix@famous.com",
+    "workAddress": "san diego, California",
+    "user": "",
+    "notes": [],
+  },
+
+
+
+  {
+    "company": "Aldrich-Allrich",
+    "birthday": "09/09/1990",
+    "preferredName": "Dylan",
+    "firstName": "Dylan",
+    "lastName": "Aldrich",
+    "network": "General Assembly",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/PdfpnCE.png",
+    "cellPhoneOne": "+1 555 444 3333",
+    "cellPhoneTwo": "+1 555 888 7654",
+    "email": "dylan_aldrich@gmail.com",
+    "homeAddress": "#8 King St, LA CA",
+    "workPhone": "9998887373",
+    "workEmail": "aldrich_dylan@famous.com",
+    "workAddress": "LA CA",
+    "user": "",
+    "notes": [],
+  },
+
+
+
+  {
+    "company": "texas electric",
+    "birthday": "10/19/1994",
+    "preferredName": "Luke",
+    "firstName": "Lucas Michael",
+    "lastName": "Shoulders",
+    "network": "family",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/lJEtNgJ.jpg",
+    "cellPhoneOne": "4448881122",
+    "cellPhoneTwo": "3335552233",
+    "email": "shoulders_lucas@gmail.com",
+    "homeAddress": "#8 Little Creek, Sherman TX",
+    "workPhone": "3339998585",
+    "workEmail": "l.shoulders@gmail.com",
+    "workAddress": "Sherman TX",
+    "user": "",
+    "notes": [],
+  },
+
+  {
+    "company": "General Assembly",
+    "birthday": "01/06/1992",
+    "preferredName": "April",
+    "firstName": "April, Christine",
+    "lastName": "Gonzales",
+    "network": "General Assembly",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/ZLwZSuE.jpg",
+    "cellPhoneOne": "+1 555 666 8787",
+    "cellPhoneTwo": "+1 555 444 5656",
+    "email": "april_gonzalez@gmail.com",
+    "workName": "General Assembly",
+    "workPhone": "+1 666 777 9999",
+    "workEmail": "gonzalez.april.ga@ga.com",
+    "workAddress": "Denver CO",
+    "user": "",
+    "notes": [],
+  }
+
+  {
+    "company": "General Assembly",
+    "birthday": "01/06/1975",
+    "preferredName": "Micah",
+    "firstName": "Micah",
+    "lastName": "Wierenga",
+    "network": "General Assembly",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/Fmce9Bd.jpg",
+    "cellPhoneOne": "+1 555 666 8787",
+    "cellPhoneTwo": "+1 555 444 5656",
+    "email": "micah_wierenga@gmail.com",
+    "workName": "General Assembly",
+    "workPhone": "+16554449999",
+    "workEmail": "wierenga.micah.ga@ga.com",
+    "workAddress": "Denver CO",
+    "user": "",
+    "notes": []
+  }
+
+-----------------------------
+
+{
+    "preferredName": "Liz",
+    "firstName": "Helen Elizabeth",
+    "lastName": "Kane",
+    "network": "self",
+    "company": "kaneCo",
+    "dateReview": "",
+    "profilePhoto": "https://i.imgur.com/VGDVWIh.jpg",
+    "cellPhoneOne": "+1(555)876-1234",
+    "cellPhoneTwo": "+18884449393",
+    "email": "elizabeth.shoulders@hotmail.com",
+    "homeAddress": "480 Canal St, SF CA 94158",
+    "workPhone": "5554443333",
+    "workEmail": "liz_kane@famous.com",
+    "workAddress": "SF CA",
+    "birthday": "02/22/1991",
+    "moreContact": "IS FROM: Phx AZ, Abq NM, Lille France, SF CA",
+    "user": "",
+    "notes": []
+}

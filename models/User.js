@@ -24,8 +24,12 @@ const userSchema = new Schema(
         },
         connections: [{
             type: mongoose.Schema.Types.ObjectId,
-            ref: "UserConnection"
+            ref: "Connection"
         }],
+        notes: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Note"            
+        }]
     }
 );
 

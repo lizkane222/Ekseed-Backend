@@ -1,29 +1,28 @@
-// {<NiceInputPassword
-//     label="password"
-//     name="password"
-//     value={password}
-//     showSecurityLevelBar
-//     onChange={(e) => setPassword(e.target.value)}
-//     LabelComponent={InputLabel}
-//     InputComponent={TextField}
-//     InputComponentProps={{
-//       variant: 'outlined',
-//       InputProps: {
-//         endAdornment: <LockIcon />,
-//       }
-//     }}
-//     securityLevels={[
-//       {
-//         descriptionLabel: <Typography>1 number</Typography>,
-//         validator: /.*[0-9].*/,
-//       },
-//       {
-//         descriptionLabel: <Typography>1 lowercase letter</Typography>,
-//         validator: /.*[a-z].*/,
-//       },
-//       {
-//         descriptionLabel: <Typography>1 uppercase letter</Typography>,
-//         validator: /.*[A-Z].*/,
-//       },
-//     ]}
-//   />}
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const noteSchema = new Schema({
+    tag: {type:String, required: false},
+    content: {type: String, required: true},
+    reviewed: {type: Boolean, required: false},
+    bookmark: {type: Boolean, required: false},
+    privacy: {type: String, required: true},
+    timestamp: {type: Date, default: Date.now},
+    
+    user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+        },
+    connection: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Connection"
+    },
+},
+    {
+        timestamps: true
+    }
+)
+
+const Note = mongoose.model('Note', noteSchema);
+
+module.exports = Note;

@@ -1,5 +1,5 @@
 {
-    "UserConnections" : [
+    "Connections" : [
         {
             "preferredName": "Liz",
             "firstName": "Helen Elizabeth",
@@ -8,24 +8,6 @@
             "company": "[]",
             "dateReview": "",
             "profilePhoto": "",
-            "note": [{
-                "tag": ["important"],
-                "content": "only discusses politics in small group setting",
-                "reviewed": "false",
-                "bookmark": "true",
-                "privacy": "true",
-                "timestamp": ""
-            },
-            {
-                "tag": ["like"],
-                "content": "frisbee, all sports, gardening, reading, afternoon drinks",
-                "reviewed": "false",
-                "bookmark": "true",
-                "privacy": "false",
-                "timestamp": ""
-                
-            }
-            ],
             "cellPhoneOne": "+1(555)876-1234",
             "cellPhoneTwo": "",
             "email": "elizabeth.shoulders@hotmail.com",
@@ -33,7 +15,8 @@
             "workPhone": "",
             "workEmail": "",
             "workAddress": "",
-            "moreContact": [""],
+            "birthday": "",
+            "moreContact": "",
 
             "user": ""
         },
@@ -45,15 +28,6 @@
             "company": ["Google"],
             "dateReview": "",
             "profilePhoto": "",
-            "note": [{
-                "tag": ["heart"],
-                "content": "speaks French, enjoys real cheese, idolizes coffee",
-                "reviewed": "false",
-                "bookmark": "true",
-                "privacy": "false",
-                "timestamp": ""
-
-            }],
             "cellPhoneOne": "+1(555)222-1234",
             "cellPhoneTwo": "(555)111-0987",
             "email": "zack.kane@hotmail.com",
@@ -61,7 +35,8 @@
             "workPhone": "+1(999)213-5243",
             "workEmail": "zackkane@google.com",
             "workAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94156",
-            "moreContact": [""],
+            "birthday": "",
+            "moreContact": "",
 
             "user": ""
         },
@@ -73,25 +48,7 @@
             "company": ["Phoenix Unified School District"],
             "dateReview": "",
             "profilePhoto": "",
-            "note": [{
-                "tag": ["like"],
-                "content": "basketball, discussing politics",
-                "reviewed": "false",
-                "bookmark": "false",
-                "privacy": "true",
-                "timestamp": ""
 
-            },
-            {
-                "tag": ["don't"],
-                "content": "discuss politics",
-                "reviewed": "false",
-                "bookmark": "true",
-                "privacy": "true",
-                "timestamp": ""
-
-            }
-            ],
             "cellPhoneOne": "+1(555)333-1234",
             "cellPhoneTwo": "",
             "email": "molly.shoulders@hotmail.com",
@@ -99,7 +56,8 @@
             "workPhone": "+1(602)889-4412",
             "workEmail": "molly.p.shoulders@phxschools.com",
             "workAddress": "",
-            "moreContact": [""],
+            "birthday": "",
+            "moreContact": "",
 
             "user": ""
         }

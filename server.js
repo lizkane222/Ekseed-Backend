@@ -17,9 +17,10 @@ app.use(express.json());
 app.use(cors());
 
 /* Routes */
-app.use('/api/v1/user/connection', routes.userConnection );
+app.use('/api/v1/connection', routes.connection );
 app.use('/api/v1/auth', routes.auth );
 app.use('/api/v1/user', routes.user );
+app.use('/api/v1/note', routes.note );
 
 /* Server Listener */
 app.listen(PORT, () => console.log(`Server is live and listening at on PORT  http://localhost:${PORT}`));

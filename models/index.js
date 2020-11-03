@@ -17,5 +17,7 @@ mongoose
 
 module.exports = {
     User: require("./User"),
-    UserConnection: require("./UserConnection"),
+    Connection: require("./Connection"),
+    Note: require("./Note")
+
 };
