@@ -3,7 +3,7 @@ const db = require("../models");
 
 const index = (req, res) => {
     console.log("backend userConnection controller @ index")
-    db.UserConnection.find({}, (err, foundUserConnections) => {
+    db.UserConnection.find({user: req.userId}, (err, foundUserConnections) => {
         if (err) {
             console.log("Error in user connection index:", err);
             return res.status(500).json({message: "Error. Please try again."});
@@ -31,7 +31,23 @@ const show = (req, res) => {
       res.status(200).json({ "connection": foundUserConnection });
     });
   };
-  
+
+  // const show = (req, res) => {
+  //   db.UserConnection.findById(req.params.id, (err, foundUserConnection) => {
+  //     if (err) console.log("Error in UserConnection #show:", err);
+  //     db.User.findById(userId, (err, foundUser) => {
+  //       // if (err) console.log("Error in UserConnection @ USER show for find USER :", err);
+  //       if (!foundUserConnection) {
+  //         return res
+  //           .status(200)
+  //           .json({ message: "UserConnection with provided ID is not found." });
+  //       } 
+  //       foundUser.connections.get(foundUserConnection);
+  //       res.status(200).json({ "connection": foundUserConnection });
+  //     })
+
+  //   });
+  // };
 
   const create = (req, res) => {
     const userId = req.userId
@@ -62,9 +78,10 @@ const show = (req, res) => {
           });
         }
         
-        res.status(200).json({ "connection": updatedUserConnection });
+        res.status(200).json({ "connectionId": updatedUserConnection });
     });
   };
+  
   
   const destroy = (req, res) => {
     db.UserConnection.findByIdAndDelete(req.params.id, (err, deletedUserConnection) => {

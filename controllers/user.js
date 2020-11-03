@@ -51,7 +51,6 @@ const update = (req, res) => {
                     message: "User with provided Id could not be found for update."
                 });
             }
-
             res.status(200).json({User: updatedUser});
         }
     );
