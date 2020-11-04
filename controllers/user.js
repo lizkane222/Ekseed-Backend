@@ -1,5 +1,7 @@
 const db = require("../models");
 
+
+
 // const index = (req, rest) => {
 //     console.log("backend User controller @ index")
 //     db.User.find({}, (err, foundUser) => {
@@ -15,6 +17,11 @@ const db = require("../models");
 //         res.status(200).json({User : foundUser});
 //     });
 // };
+
+
+
+// SHOW USER
+
 
 const show = (req, res) => {
     console.log(req.userId)
@@ -32,12 +39,14 @@ const show = (req, res) => {
     });
 };
 
+// CREATE NEW USER 
 const create = (req, res) => {
     db.User.create(req.body, (err, savedUser) => {
         if (err) console.log("Error in User @ create:", err);
     });
 };
 
+// UPDATE USER
 const update = (req, res) => {
     db.User.findByIdAndUpdate(
         req.params.id,
@@ -56,6 +65,7 @@ const update = (req, res) => {
     );
 };
 
+// DELETE USER
 const destroy = (req, res) => {
     db.User.findByIdAndDelete(req.params.id, (err, deletedUser) => {
         if (err) console.log("Error in User @ destroy", err);
@@ -70,6 +80,8 @@ const destroy = (req, res) => {
     });
 };
 
+
+// EXPORTS
 module.exports = {
     // index,
     show,

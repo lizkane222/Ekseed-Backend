@@ -35,7 +35,7 @@ const login = async (req,res) => {
         const foundUser = await db.User.findOne({ email: req.body.email, username: req.body.username }).select(
             "+password"
         );
-        // console.log(foundUser);
+        console.log(foundUser);
 
         if(!foundUser) {
             return res
@@ -54,7 +54,7 @@ const login = async (req,res) => {
             const signedJwt = await jwt.sign(
                 {_id: foundUser._id},
                 "supersecretwaffels",
-                {expiresIn: "8h",}
+                {expiresIn: "3d",}
             )
             res.status(200).json({
                 status: 200,
