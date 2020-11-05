@@ -6,7 +6,9 @@ const noteSchema = new Schema({
     content: {type: String, required: true},
     reviewed: {type: Boolean, required: false},
     bookmark: {type: Boolean, required: false},
-    privacy: {type: Boolean, required: true},
+    privacy: {type: Boolean, required: false},
+    formStyle: {type: String, required: false},
+    bodyStyle: {type: String, required: false},
     
     user: {
             type: mongoose.Schema.Types.ObjectId,
