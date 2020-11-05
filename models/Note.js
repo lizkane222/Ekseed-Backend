@@ -2,12 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const noteSchema = new Schema({
-    tag: {type:String, required: false},
+    tag: [{type:String, required: false}],
     content: {type: String, required: true},
     reviewed: {type: Boolean, required: false},
     bookmark: {type: Boolean, required: false},
-    privacy: {type: String, required: true},
-    timestamp: {type: Date, default: Date.now},
+    privacy: {type: Boolean, required: true},
     
     user: {
             type: mongoose.Schema.Types.ObjectId,

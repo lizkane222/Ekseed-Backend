@@ -19,8 +19,9 @@ const index = (req, res) => {
 
 
 const show = (req, res) => {
-    // db.Connection.findById(req.params.id).populate("user notes").exec((err, foundConnection) => {
-    db.Connection.findById(req.params.id).populate("user").exec((err, foundConnection) => {
+    db.Connection.findById(req.params.id).populate("user notes").exec((err, foundConnection) => {
+    // db.Connection.findById(req.params.id).populate("user").exec((err, foundConnection) => {
+    // db.Connection.findById(req.params.id, (err, foundConnection) => {
       if (err) console.log("Error in Connection #show:", err);
   
       if (!foundConnection) {
@@ -69,19 +70,19 @@ const show = (req, res) => {
   const update = (req, res) => {
     db.Connection.findByIdAndUpdate(
       req.params.id,
-      req.body,
+      {$set:{...req.body}},
       { new: true },
       (err, updatedConnection) => {
-        if (err) console.log("Error in Connections#update:", err);
+        if (err) console.log("Error in Connection #update:", err);
   
         if (!updatedConnection) {
           return res.status(200).json({
             message: "Connection with provided ID could not be found for update.",
           });
         }
-        
-        res.status(200).json({ "connectionId": updatedConnection });
-    });
+        res.status(200).json({ "connection": updatedConnection, status: 201 });
+      }
+    );
   };
   
   
