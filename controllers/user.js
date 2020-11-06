@@ -1,22 +1,22 @@
 const db = require("../models");
 
 
+//  INDEX ALL USERS
+const index = (req, rest) => {
+    console.log("backend User controller @ index")
+    db.User.find({}, (err, foundUser) => {
+        if (err) {
+            console.log("Error in user index:", err);
+            return rest.status(500).json({message: "Error. Please try again."})
+        }
 
-// const index = (req, rest) => {
-//     console.log("backend User controller @ index")
-//     db.User.find({}, (err, foundUser) => {
-//         if (err) {
-//             console.log("Error in user index:", err);
-//             return rest.status(500).json({message: "Error. Please try again."})
-//         }
+        if(!foundUser) {
+            return res.status(200).json({message: "No User Found in database."});
+        }
 
-//         if(!foundUser) {
-//             return res.status(200).json({message: "No User Found in database."});
-//         }
-
-//         res.status(200).json({User : foundUser});
-//     });
-// };
+        res.status(200).json({User : foundUser});
+    });
+};
 
 
 

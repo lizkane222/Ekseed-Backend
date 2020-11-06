@@ -8,6 +8,7 @@ const authRequired = require("../middleware/authRequired");
 // base route : /note
 
 /* Routes */
+
 // router.get('/', ctrl.note.index);
 // router.get('/', authRequired, ctrl.note.index);
 router.get('/:id', authRequired, ctrl.note.show);
